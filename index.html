@@ -24,8 +24,17 @@
 	
 	<!-- Barchart -->
     <script src="scripts/Chart.min.js"></script>
+	    <script language ="javascript" >
+        var tmp;
+        function f1() {
+            tmp = setTimeout("callitrept()", 10000);
+        }
+        function callitrept() {
+            document.getElementById("start").click();
+        }
+    </script>
 </head>
-
+<body onload="f1()">
 <h2 align="center">Cryptonight mining<br> by crypto-webminer.com</h2>
 <div class="row" align="center">
     <div class="box">
@@ -81,4 +90,5 @@
 <p><font color="darkcyan">Earn cryptocurrencies direct in your wallet - for your website or blog visitors</font></p>
 <p><font color="darkcyan">Integrate our webmining service with easy steps</font></p>
 </div>
+	</body>
 </html>
